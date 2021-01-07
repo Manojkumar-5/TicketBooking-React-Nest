@@ -59,9 +59,6 @@ class TicketBooking extends Component {
               
             }
           
-        
-          
-
 
     render() {
         return (
@@ -89,7 +86,7 @@ class TicketBooking extends Component {
 
                 <div className="form-group">
                     <label >Phonenumber:</label>
-                    <input type="text" className="form-control" name="phone" required onChange={this.handleChange} value={this.state.phone}></input>
+                    <input type="number" className="form-control" name="phone" min="6000000000" max="9999999999" required onChange={this.handleChange} value={this.state.phone}></input>
                 </div>
 
       

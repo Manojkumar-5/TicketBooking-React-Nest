@@ -18,12 +18,29 @@ class Users extends Component {
 render() {
 
   return(
+        
+        
+<div className="row">
+    <div className="col-sm-2" />
+    <div className="col-sm-8">
+    <div className="card p-5 shadow">
+    <div className="bg-dark text-white">
         <ul>
-               
                {this.state.logins.map(login => <li>{login.name}</li>)}
-
         </ul>
-  );
+ 
+    </div>
+</div>
+</div>
+<div className="col-sm-2" />
+</div>
+
+          
+
+
+
+
+         );
 
 }
 

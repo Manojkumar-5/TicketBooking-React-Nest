@@ -17,27 +17,30 @@ class OpenTickets extends Component {
   }
 
     render() {
-        return (
-
-  
-          <div>
-
-
-          {this.state.openseats.map(open =>
-          
-          <Button variant="btn btn-success" size="lg" block>{open.seatnumber}
-          </Button>
-           
-          )}
-
-          </div>
-       
         
+      return (
 
-      
-                 
-        );
-    }
+                     <div className="row">
+              <div className="col-sm-2" />
+              <div className="col-sm-8">
+              <div className="card p-5 shadow">
+              {this.state.openseats.map(open =>
+              <div className="card p-1 shadow">
+              <Button variant="btn btn-success" size="lg">{open.seatnumber}
+              </Button>
+              </div>
+
+              )}
+
+          
+        </div>
+      </div>
+      <div className="col-sm-2" />
+    </div>
+  );
+};
+            
 }
+
 
 export default OpenTickets;
